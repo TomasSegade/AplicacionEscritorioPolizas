@@ -1,0 +1,11 @@
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\bin\Debug\SistemaPolizas.exe.config
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\bin\Debug\SistemaPolizas.exe
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\bin\Debug\SistemaPolizas.pdb
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.csproj.AssemblyReference.cache
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.Properties.Resources.resources
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.csproj.GenerateResource.cache
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.csproj.CoreCompileInputs.cache
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.exe
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.pdb
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.form_Menu.resources
+D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.form_Argos.resources
