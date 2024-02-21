@@ -9,3 +9,14 @@ D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas
 D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.pdb
 D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.form_Menu.resources
 D:\Tomas\Escritorio\sistema_polizas\SistemaPolizas\SistemaPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.form_Argos.resources
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\bin\Debug\SistemaPolizas.exe.config
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\bin\Debug\SistemaPolizas.exe
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\bin\Debug\SistemaPolizas.pdb
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.csproj.AssemblyReference.cache
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.form_Argos.resources
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.form_Menu.resources
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.Properties.Resources.resources
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.csproj.GenerateResource.cache
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.csproj.CoreCompileInputs.cache
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.exe
+C:\Users\Tomas\Desktop\SistemaDePolizas\AplicacionEscritorioPolizas\SistemaPolizas\obj\Debug\SistemaPolizas.pdb

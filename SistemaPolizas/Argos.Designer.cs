@@ -76,6 +76,8 @@
             this.lst_lista.Name = "lst_lista";
             this.lst_lista.Size = new System.Drawing.Size(313, 368);
             this.lst_lista.TabIndex = 3;
+            this.lst_lista.SelectedIndexChanged += new System.EventHandler(this.lst_lista_SelectedIndexChanged);
+            this.lst_lista.Leave += new System.EventHandler(this.lst_lista_Leave);
             // 
             // lbl_Dni
             // 
@@ -113,6 +115,7 @@
             this.txt_Dni.Name = "txt_Dni";
             this.txt_Dni.Size = new System.Drawing.Size(175, 20);
             this.txt_Dni.TabIndex = 7;
+            this.txt_Dni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Dni_KeyPress);
             // 
             // txt_Patente
             // 
@@ -120,6 +123,7 @@
             this.txt_Patente.Name = "txt_Patente";
             this.txt_Patente.Size = new System.Drawing.Size(175, 20);
             this.txt_Patente.TabIndex = 8;
+            this.txt_Patente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Patente_KeyPress);
             // 
             // txt_Endoso
             // 
@@ -127,6 +131,7 @@
             this.txt_Endoso.Name = "txt_Endoso";
             this.txt_Endoso.Size = new System.Drawing.Size(85, 20);
             this.txt_Endoso.TabIndex = 9;
+            this.txt_Endoso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Endoso_KeyPress);
             // 
             // form_Argos
             // 
