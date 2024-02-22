@@ -25,10 +25,17 @@ namespace SistemaPolizas
             btn_Finisterre.Enabled = false;
 
             // Especificar la ruta deseada para el archivo CSV de Argos
-            string rutaArgos = "C:\\Users\\Tomas\\Desktop\\script_python\\archivoCSV_ARGOS.csv";
+            string rutaArgos = "D:\\Tomas\\Escritorio\\sistema_polizas\\sistema_polizas\\archivoCSV_ARGOS.csv";
 
             GestorDatos gestorArgos = new GestorDatos(rutaArgos);
 
         }
+
+        private void btn_Finisterre_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
 }

@@ -60,13 +60,6 @@ namespace SistemaPolizas
             // Verificar si el archivo existe
             bool existeArchivo = File.Exists(Ruta);
 
-            // Verificar si la patente ya existe
-            if (ListarVehiculos().Any(v => v.patente == clase_Argos.patente))
-            {
-                throw new Exception("La patente ya ha sido ingresada anteriormente.");
-            }
-
-
 
             FileStream fs = new FileStream(Ruta, FileMode.Append, FileAccess.Write);
 
@@ -122,6 +115,35 @@ namespace SistemaPolizas
             }
         }
 
+        public void EliminarVehiculo(string patente)
+        {
+            string output = string.Empty;
+
+            FileStream fs = new FileStream(Ruta, FileMode.OpenOrCreate, FileAccess.Read);
+
+            using (StreamReader reader = new StreamReader(fs))
+            {
+                string linea = reader.ReadLine();
+                while (linea != null)
+                {
+                    Clase_Argos vehiculo = new Clase_Argos(linea);
+                    if (vehiculo.patente != patente)
+                    {
+                        output += linea + Environment.NewLine;
+                    }
+
+                    linea = reader.ReadLine();
+                }
+            }
+            fs.Close();
+
+            fs = new FileStream(Ruta, FileMode.Truncate, FileAccess.Write);
+
+            using (StreamWriter writer = new StreamWriter(fs))
+            {
+                writer.Write(output);
+            }
+        }
 
 
     }

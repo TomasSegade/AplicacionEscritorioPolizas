@@ -61,6 +61,7 @@
             this.btn_Finisterre.TabIndex = 2;
             this.btn_Finisterre.Text = "Finisterre";
             this.btn_Finisterre.UseVisualStyleBackColor = true;
+            this.btn_Finisterre.Click += new System.EventHandler(this.btn_Finisterre_Click);
             // 
             // form_Menu
             // 

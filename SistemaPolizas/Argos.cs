@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SistemaPolizas
@@ -6,16 +7,18 @@ namespace SistemaPolizas
     public partial class form_Argos : Form
     {
         private GestorDatos gestorDatos;
+        private string patenteSeleccionada = "";
 
         public form_Argos()
         {
             InitializeComponent();
 
             // Especifica la ruta del archivo CSV
-            string rutaArgos = "C:\\Users\\Tomas\\Desktop\\script_python\\archivoCSV_ARGOS.csv";
+            string rutaArgos = "D:\\Tomas\\Escritorio\\sistema_polizas\\sistema_polizas\\archivoCSV_ARGOS.csv";
 
             // Inicializa el gestor de datos con la ruta especificada
             gestorDatos = new GestorDatos(rutaArgos);
+
         }
 
         private void MostrarLista()
@@ -31,11 +34,6 @@ namespace SistemaPolizas
             txt_Endoso.Clear();
         }
 
-        private void lst_lista_Leave(object sender, EventArgs e)
-        {
-            // Desmarcar la selección del ListBox
-            lst_lista.ClearSelected();
-        }
 
 
         private void btn_Modificar_Click(object sender, EventArgs e)
@@ -91,13 +89,19 @@ namespace SistemaPolizas
                     clase_Argos.patente = txt_Patente.Text;
                     clase_Argos.endoso = Convert.ToInt32(txt_Endoso.Text);
 
+                    // Verificar si la patente ya existe
+                    if (gestorDatos.ListarVehiculos().Any(v => v.patente == clase_Argos.patente))
+                    {
+                        throw new Exception("La patente ya ha sido ingresada anteriormente.");
+                    }
+
                     gestorDatos.AgregarVehiculo(clase_Argos);
                     MostrarLista();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar");
+                MessageBox.Show($"Error al agregar: {ex.Message}");
             }
         }
 
@@ -146,20 +150,32 @@ namespace SistemaPolizas
             }
         }
 
-        private void lst_lista_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void btn_Eliminar_Click(object sender, EventArgs e)
         {
-            // Verificar si se ha seleccionado un elemento en la lista
-            if (lst_lista.SelectedIndex != -1)
+            try
             {
-                // Si hay un elemento seleccionado, deshabilitar el botón de agregar
-                btn_Agregar.Enabled = false;
+                // Verificar si hay un elemento seleccionado en la lista
+                if (lst_lista.SelectedItem != null)
+                {
+                    // Obtener el vehículo seleccionado
+                    Clase_Argos vehiculoEliminar = (Clase_Argos)lst_lista.SelectedItem;
+
+                    // Eliminar el vehículo seleccionado
+                    gestorDatos.EliminarVehiculo(vehiculoEliminar.patente);
+
+                    // Actualizar la lista
+                    MostrarLista();
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, seleccione un vehículo de la lista para eliminar.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                // Si no hay un elemento seleccionado, habilitar el botón de agregar
-                btn_Agregar.Enabled = true;
+                MessageBox.Show($"Error al eliminar: {ex.Message}");
             }
         }
-
     }
 }

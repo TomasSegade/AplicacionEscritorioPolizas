@@ -71,7 +71,7 @@
     <EmbeddedResource Include="Argos.resx">
       <DependentUpon>Argos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Menu.resx">
+    <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

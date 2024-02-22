@@ -76,8 +76,6 @@
             this.lst_lista.Name = "lst_lista";
             this.lst_lista.Size = new System.Drawing.Size(313, 368);
             this.lst_lista.TabIndex = 3;
-            this.lst_lista.SelectedIndexChanged += new System.EventHandler(this.lst_lista_SelectedIndexChanged);
-            this.lst_lista.Leave += new System.EventHandler(this.lst_lista_Leave);
             // 
             // lbl_Dni
             // 
